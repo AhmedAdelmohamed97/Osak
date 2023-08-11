@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+}
+
+:root {
+  --pink-color: #dc3545;
+  --green-color: #35dc51;
+  --yello-color: #d1dc35;
+  --gray-color: rgba(255, 255, 255, 0.5);
+  --darkGray-color: rgb(155, 155, 155);
+}
+.navbar {
+  z-index: 999999;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+.home {
+  height: 100vh;
+  background-image: url(../images/4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.homeContent {
+  height: 90%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.social {
+  width: 25%;
+  margin: 10px 0px;
+}
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 26px;
+  border: 1px solid var(--gray-color);
+  transition: border-color 0.5s;
+  /* color: var(--pink-color); */
+}
+.profile a {
+  color: var(--pink-color);
+}
+
+.about {
+  background-image: url(../images/light_dot.jpg);
+}
+
+.layer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+.layer h2 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--darkGray-color);
+}
+.layer h3 {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.col-md-7 h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.col-md-7 h4 {
+  font-size: 2rem;
+  color: var(--pink-color);
+}
+
+.services {
+  margin-top: 20px;
+  background-image: url(../images/dark_dot.jpg);
+  padding: 20px 0px;
+}
+.card {
+  align-items: center;
+  padding: 20px 5px;
+  position: relative;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  border: 1px #fff solid;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.card h3 {
+  position: relative;
+}
+
+.card h3::before {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  width: 80%;
+  height: 2px;
+  background-color: var(--pink-color);
+  transform: translateX(-50%);
+}
+
+.card p {
+  padding: 0px 3px;
+  margin: 5px 0px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  text-indent: 0;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-indicators {
+  bottom: -100px !important;
+}
+
+.layout {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: -100%;
+  transition: top 1s;
+  height: 100%;
+}
+.cat:hover .layout {
+  top: 0;
+  bottom: 0;
+}
+
+.socialIcon:hover {
+  border-color: var(--pink-color);
+}
+
+.foot {
+  color: var(--pink-color);
+  font-weight: 900;
+  text-transform: capitalize;
+  
+}
